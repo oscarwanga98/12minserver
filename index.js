@@ -20,7 +20,7 @@ async function pingServer(url) {
 setInterval(() => {
   pingServer(YOUR_RENDER_SERVER_URL); // Ping your main server
   pingServer(`http://localhost:${PORT}`); // Ping itself (keeps this server alive)
-}, 12 * 60 * 1000); // 12 minutes
+}, 4 * 60 * 1000); // 12 minutes
 
 // Basic route to respond to pings
 app.get("/", (req, res) => {
